@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --primary: #2563eb;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --border: #133475;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #eef4ff, #f8fafc);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
+        padding: 32px;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 2.5rem;
+        color: var(--primary);
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .button-row {
+        margin-top: 24px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.2s ease;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .btn-secondary {
+        background: #e0edff;
+        color: var(--primary);
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Hello, world!</h1>
+        <p>
+          This is a simple HTML page created with basic structure, styling, and a clean layout.
+        </p>
+        <p>
+          You can edit this file or add more sections, text, and design elements as needed.
+        </p>
+
+        <div class="button-row">
+          <a class="btn btn-primary" href="#">Primary Button</a>
+          <a class="btn btn-secondary" href="#">Secondary Button</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
